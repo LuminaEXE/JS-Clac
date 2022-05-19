@@ -1,3 +1,136 @@
+
+//buttons
+var btn1 = document.getElementById("1");
+var btn2 = document.getElementById("2");
+var btn3 = document.getElementById("3");
+var btn4 = document.getElementById("4");
+var btn5 = document.getElementById("5");
+var btn6 = document.getElementById("6");
+var btn7 = document.getElementById("7");
+var btn8 = document.getElementById("8");
+var btn9 = document.getElementById("9");
+var btn0 = document.getElementById("0");
+
+//operators
+var btnSqRt = document.getElementById("√")
+var btnPwr = document.getElementById("^")
+var btnMulti = document.getElementById("*")
+var btnRt = document.getElementById("/")
+var btnMinus = document.getElementById("-")
+var btnPlus = document.getElementById("+")
+var btnDot = document.getElementById(".")
+var btnEqual = document.getElementById("=")
+
+//Specials
+var input = document.getElementById("input");
+var clear = document.getElementById("CC")
+var btnBack = document.getElementById("C")
+
+
+
+
+
+var elementsApended = []
+
+
+
+
+
+/*	${ Event.listners }$	*/
+
+
+
+
+
+btn1.addEventListener("click", function () {
+	elementsApended.push("1");
+	input.innerHTML = elementsApended.join("")
+});
+btn2.addEventListener("click", function () {
+	elementsApended.push("2");
+	input.innerHTML = elementsApended.join("")
+})
+btn3.addEventListener("click", function () {
+	elementsApended.push("3");
+	input.innerHTML = elementsApended.join("")
+})
+btn4.addEventListener("click", function () {
+	elementsApended.push("4");
+	input.innerHTML = elementsApended.join("")
+});
+btn5.addEventListener("click", function () {
+	elementsApended.push("5");
+	input.innerHTML = elementsApended.join("")
+})
+btn6.addEventListener("click", function () {
+	elementsApended.push("6");
+	input.innerHTML = elementsApended.join("")
+})
+btn7.addEventListener("click", function () {
+	elementsApended.push("7");
+	input.innerHTML = elementsApended.join("")
+});
+btn8.addEventListener("click", function () {
+	elementsApended.push("8");
+	input.innerHTML = elementsApended.join("")
+})
+btn9.addEventListener("click", function () {
+	elementsApended.push("9");
+	input.innerHTML = elementsApended.join("")
+})
+btn0.addEventListener("click", function () {
+	elementsApended.push("0");
+	input.innerHTML = elementsApended.join("")
+})
+
+
+
+
+
+/*	${ Power.Listners }$	*/
+
+
+
+
+
+btnPwr.addEventListener("click", function () {
+	elementsApended.push("^");
+	input.innerHTML = elementsApended.join("")
+})
+btnSqRt.addEventListener("click", function () {
+	elementsApended.push("√");
+	input.innerHTML = elementsApended.join("")
+});
+btnMulti.addEventListener("click", function () {
+	elementsApended.push("*");
+	input.innerHTML = elementsApended.join("")
+})
+btnRt.addEventListener("click", function () {
+	elementsApended.push("/");
+	input.innerHTML = elementsApended.join("")
+})
+btnMinus.addEventListener("click", function () {
+	elementsApended.push("-");
+	input.innerHTML = elementsApended.join("")
+})
+btnPlus.addEventListener("click", function () {
+	elementsApended.push("+");
+	input.innerHTML = elementsApended.join("")
+})
+btnDot.addEventListener("click", function () {
+	elementsApended.push(".");
+	input.innerHTML = elementsApended.join("")
+})
+
+
+
+
+
+/*
+		LOGIC 👇
+*/
+
+
 btnEqual.addEventListener("click", function () {
 	function calculate(usrInput){
 
